@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel_Top = new System.Windows.Forms.Panel();
-            this.panel_Img = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -44,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnIniciar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnSalir = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -64,16 +64,6 @@
             this.panel_Top.Size = new System.Drawing.Size(763, 30);
             this.panel_Top.TabIndex = 0;
             this.panel_Top.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_Top_MouseMove);
-            // 
-            // panel_Img
-            // 
-            this.panel_Img.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_Img.BackgroundImage")));
-            this.panel_Img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_Img.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_Img.Location = new System.Drawing.Point(273, 30);
-            this.panel_Img.Name = "panel_Img";
-            this.panel_Img.Size = new System.Drawing.Size(490, 348);
-            this.panel_Img.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -229,12 +219,23 @@
             this.btnSalir.TabStop = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(273, 30);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(490, 348);
+            this.panel1.TabIndex = 21;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(763, 378);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.label2);
@@ -245,7 +246,6 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel_Img);
             this.Controls.Add(this.panel_Top);
             this.Controls.Add(this.bunifuSeparator1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -268,7 +268,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel_Img;
         private System.Windows.Forms.Panel panel_Top;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtUsuario;
@@ -279,6 +278,7 @@
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 btnIniciar;
         private System.Windows.Forms.PictureBox btnSalir;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

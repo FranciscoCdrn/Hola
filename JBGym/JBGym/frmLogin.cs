@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//OnceDiez Development 
+
 namespace JBGym
 {
     public partial class frmLogin : Form
@@ -108,6 +110,5 @@ namespace JBGym
         {
             AccederAlSistema();
         }
-
     }
 }
